@@ -1,0 +1,20 @@
+:root {
+  --bs-body-font-family: "Open Sans", sans-serif;
+  --bs-primary: #162329;
+  --bs-tertiary-bg-rgb: 9, 37, 57;
+}
+
+.navbar {
+  --bs-navbar-brand-color: var(--bs-white);
+  --bs-navbar-brand-hover-color: var(--bs-white);
+}
+.navbar-brand {
+  font-weight: 800;
+}
+.navbar-nav {
+  --bs-nav-link-color: var(--bs-white);
+  --bs-navbar-hover-color: var(--bs-gray-300);
+}
+.card img {
+  height: 250px;
+}
