@@ -1,20 +1,53 @@
 :root {
-  --bs-body-font-family: "Open Sans", sans-serif;
-  --bs-primary: #162329;
-  --bs-tertiary-bg-rgb: 9, 37, 57;
+  --bs-body-font-family: "Inter", sans-serif;
+  --bs-primary: #306ab0;
+  --bs-primary-rgb: 48, 106, 176;
+  --bs-secondary-bg: #efebe6;
+  --bs-body-bg: #fcf8f3;
+  --bs-body-color: #1c1308;
+  --bs-body-font-size: 18px;
 }
 
-.navbar {
-  --bs-navbar-brand-color: var(--bs-white);
-  --bs-navbar-brand-hover-color: var(--bs-white);
+* {
+  transition: all 0.3s ease;
 }
+
 .navbar-brand {
-  font-weight: 800;
+  font-weight: 700;
+  display: flex;
 }
-.navbar-nav {
-  --bs-nav-link-color: var(--bs-white);
-  --bs-navbar-hover-color: var(--bs-gray-300);
+.nav-link {
+  --bs-nav-link-font-size: 16px;
+}
+.card {
+  --bs-card-bg: var(--bs-secondary-bg);
 }
 .card img {
   height: 250px;
+}
+.card:hover .highlight::before {
+  height: 100%;
+}
+.card-body {
+  --bs-card-spacer-x: 2rem;
+  --bs-card-spacer-y: 2rem;
+}
+
+.highlight {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.highlight::before {
+  content: "";
+  height: 50%;
+  width: 100%;
+  display: block;
+  z-index: -5;
+  opacity: 30%;
+  position: absolute;
+  transition: all 0.3s ease;
+  background: linear-gradient(180deg, transparent 50%, var(--bs-primary) 50%);
 }
