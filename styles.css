@@ -28,10 +28,6 @@
 .card:hover .highlight::before {
   height: 100%;
 }
-.card-body {
-  --bs-card-spacer-x: 2rem;
-  --bs-card-spacer-y: 2rem;
-}
 
 .highlight {
   z-index: 5;
